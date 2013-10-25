@@ -13,20 +13,34 @@ body {
 	margin-bottom: 0px;
 }
 -->
-</style></head>
+</style>
+
+<script src="./jquery-1.9.1.min.js"></script>
+<script src="./detectmobilebrowser.js"></script>
+
+</head>
 <body bgcolor="#000000">
 
 <div align="center">
-  <!--URL utilizadas en la pelÌcula-->
-  <!--Texto utilizado en la pelÌcula-->
+  <!--URL utilizadas en la pel√≠cula-->
+  <!--Texto utilizado en la pel√≠cula-->
   <!-- saved from url=(0013)about:internet -->
   <script language="javascript">
 	if (AC_FL_RunContent == 0) {
-		alert("Esta p·gina requiere el archivo AC_RunActiveContent.js.");
+		alert("Esta p√°gina requiere el archivo AC_RunActiveContent.js.");
 	} else {
 		AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0','name','web','width','900','height','550','align','middle','id','web','src','web','menu','false','quality','high','wmode','transparent','bgcolor','#000000','allowscriptaccess','sameDomain','allowfullscreen','false','pluginspage','http://www.macromedia.com/go/getflashplayer','movie','web' ); //end AC code
 	}
   </script>
+  
+    <script>
+		if(jQuery.browser.mobile)
+		{
+		   //alert('You are using a mobile device!');
+		   document.location.href = "http://www.chascobatsa.com.ar/mobile.index.html";
+		}
+	</script>
+	
   <noscript>
     <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" name="web" width="900" height="550" align="middle" id="web">
       <param name="allowScriptAccess" value="sameDomain" />
@@ -39,6 +53,11 @@ body {
       <embed src="web.swf" menu="false" quality="high" wmode="transparent" bgcolor="#000000" width="900" height="550" name="web" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />              
   </object>
   </noscript>
+  
+  <div align="center">
+  	<span style="color: #f00;background-color:#000000;">Ver version</span> <a href="http://www.chascobatsa.com.ar/mobile.index.html"><img width="30" height="30" src="html5-logo.png"/></a>
+  </div>
+  
 </div>
 </body>
 </html>
