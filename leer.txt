@@ -9,6 +9,6 @@ novedades.swf
 productos.swf
 web.swf
 
-TODOS LOS DEMAS ARCHIVOS SON DE LA VERSION NUEVA!!
-test.html es la version de index.html modificada para que redirecione a la version
-mobile automatica o manualmente.
+TODOS LOS DEMAS ARCHIVOS SON DE LA VERSION NUEVA!! (mobile.*, jquery, etc.)
+test.html es la version de index.html modificada para que redireccione a la version
+mobile automatica o manualmente con un link.
