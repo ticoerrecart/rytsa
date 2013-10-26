@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Chascobat S.A.</title>
+
+<script src="./jquery-1.9.1.min.js"></script>
+
+<script src="./detectmobilebrowser.js"></script>
+<script src="./flash_detect_min.js"></script>
+
+
+</head>
+<body bgcolor="#000000">
+
+<div align="center">
+  
+	<script>
+
+		if(!FlashDetect.installed){
+			alert("Flash not installed")     	
+		}else{
+			//flash installed.
+			alert("Flash installed")
+			if(jQuery.browser.mobile){
+				alert("Entering from mobile")
+			}else{
+				alert("Entering from PC")
+			}
+			
+		}
+		
+		
+	</script>
+  
+</div>
+</body>
+</html>
